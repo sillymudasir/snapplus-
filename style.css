@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden;
+}
+
+.snap-wrapper {
+    background-color: #FFFC00; /* Snapchat Yellow */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    width: 65px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.input-field {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    font-size: 10px;
+    font-weight: bold;
+    color: #999;
+    display: block;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #e0e0e0;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-field input:focus {
+    border-bottom: 1px solid #000;
+}
+
+.yellow-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.bottom-text {
+    margin-top: 20px;
+}
+
+.bottom-text a {
+    color: #007aff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Black Screen & Loader */
+#black-screen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 10000;
+}
+
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.spinner {
+    width: 45px;
+    height: 45px;
+    border: 4px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border-top-color: #fff;
+    animation: spin 1s linear infinite;
+    margin-bottom: 15px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.loader-container p {
+    color: white;
+    font-size: 16px;
+}
